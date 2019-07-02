@@ -1,6 +1,18 @@
-<h1>Search for a Movie</h1>
+<% include ./partials/header %>
+<link rel="stylesheet" href="stylesheets/landing.css">
 
-<form action="/results" method="GET">
-    <input type="text" placeholder="search term" name="search">
-    <input type="submit">
-</form>
+
+	
+	<div class = "ui raised very padded text container segment">
+	<h1 class="ui huge header">Search for a Movie</h1>
+<form action="/results" method="GET" class="ui large form">
+	<div class="ui stacked segment">
+  <input type="text" placeholder="search term" name="search">
+  <input class="ui fluid large teal submit button" type="submit">
+	</div>	
+</form>		
+</div>
+	
+
+<script src="scripts/background.js"></script>
+<% include ./partials/footer %>
