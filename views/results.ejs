@@ -9,9 +9,11 @@
 <% data["Search"].forEach(function(movie) { %>
    <div class="item">
 	   <div class="content">
-		   <div class="header"><strong><%= movie["Title"] %></strong></div>
-		   <strong><%= movie["Year"] %></strong>
-		   <strong><%= movie["Rated"] %></strong>
+		   <h2 class="ui header"><strong><%= movie["Title"] %></strong></h2>
+		  <strong>Year: <%= movie["Year"] %></strong>
+		   <strong>Type: <%= movie["Type"] %></strong>
+		   <strong>Id: <%= movie["imdbID"] %></strong>
+		   <img class="ui small image" src="<%= movie["Poster"] %>" alt="">
    </div>
 	   </div>
 <% }) %>
